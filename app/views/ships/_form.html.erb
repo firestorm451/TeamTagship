@@ -1,4 +1,5 @@
 <%= simple_form_for @ship,:url => user_ships_path, :method => :post do |f| %>
   <%= f.input :body, label: false, placeholder: "What you shippin' bout?" %>
+  <div id="textarea_feedback"></div>
   <%= f.button :submit, "New Ship", id: "btn-ship" %>
 <% end %>
